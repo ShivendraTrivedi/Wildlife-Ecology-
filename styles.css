@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.quiz-container {
+    max-height: 400px; /* Set a maximum height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column; /* Stack options vertically */
+}
+
+.option {
+    background-color: #e7e7e7;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left; /* Left-align text */
+    transition: background-color 0.3s;
+}
+
+.option.correct {
+    background-color: #4caf50; /* Green for correct answer */
+}
+
+.option.incorrect {
+    background-color: #f44336; /* Red for incorrect answer */
+}
+
+.home-button {
+    background-color: #008CBA; /* Blue background for home button */
+    color: white;
+}
