@@ -572,7 +572,7 @@ const quizData = {
         {
             question: "The private marginal cost to producers plus any costs associated with the production of the good that are imposed on others is",
             options: [
-                "private marginal cost (PMC)
+                "private marginal cost (PMC)",
                 "social marginal cost (SMC)",
                 "private marginal benefit (PMB)",
                 "social marginal benefit (SMB)"
