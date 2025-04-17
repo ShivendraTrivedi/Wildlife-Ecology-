@@ -1,156 +1,958 @@
 const quizData = {
     week1: [
-        { question: "Enquiry into plants is a book written by", options: ["Theophrastus", "Linnaeus", "Malthus", "Humboldt"], correctAnswerIndex: 0 },
-        { question: "In the Greek word root of Ecology, Oikos refers to", options: ["household", "preservation", "environment", "study"], correctAnswerIndex: 0 },
-        { question: "In the Greek word root of Ecology, logos refers to", options: ["household", "preservation", "environment", "study"], correctAnswerIndex: 3 },
-        { question: "Ecology is the scientific study of interactions among organisms and their_____.", options: ["habitat", "niche", "environment", "population"], correctAnswerIndex: 2 },
-        { question: "Who amongst these is considered the father of Biogeography?", options: ["Theophrastus", "Linnaeus", "Malthus", "Humboldt"], correctAnswerIndex: 3 },
-        { question: "Which of these is not a characteristic of fitness?", options: ["Fitness is environment-specific", "Fitness is species-specific", "Higher reproductive rate means higher fitness", "Fitness should be measured across several generations"], correctAnswerIndex: 2 },
-        { question: "Which of these is not a kind of selection?", options: ["directional", "stochastic", "disruptive", "stabilising"], correctAnswerIndex: 1 },
-        { question: "Ecology is the scientific study of _______ that determine the distribution and abundance of organisms.", options: ["statics", "interactions", "dynamics", "habitat"], correctAnswerIndex: 1 },
-        { question: "Which of these is not a characteristic of fitness?", options: ["Fitness is environment-specific", "Fitness is species-specific", "Fitness works on traits such as size and speed", "Fitness should be measured across several generations"], correctAnswerIndex: 2 },
-        { question: "Which of these is not a step in natural selection?", options: ["variation", "underpopulation", "struggle for existence", "survival of the fittest"], correctAnswerIndex: 1 }
+        {
+            question: "In the word root for conservation, con stands for",
+            options: ["together", "to keep", "house", "manage"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“the ability of a single economic actor (or small group of actors) to have a substantial influence on market prices” is known as",
+            options: ["price power", "market power", "externality", "economic power"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“an economy that allocates resources through the decentralised decisions of many firms and households as they interact in markets for goods and services” is a / an",
+            options: ["urban economy", "rural economy", "planned economy", "market economy"],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "In the word root for conservation, servare stands for",
+            options: ["together", "to keep", "house", "manage"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "Which of these is true?",
+            options: [
+                "Wants are unlimited, resources are unlimited",
+                "Wants are limited, resources are limited",
+                "Wants are unlimited, resources are limited",
+                "Wants are limited, resources are unlimited"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "“an increase in the overall level of prices in the economy” is",
+            options: ["inflation", "deflation", "stagflation", "priceflation"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "Phillips curve shows the relation between",
+            options: [
+                "profit and loss",
+                "marked price and selling price",
+                "inflation rate and unemployment rate",
+                "electricity consumption and heat output"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "In the word root for Economics, oikos stands for",
+            options: ["together", "to keep", "house", "manage"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "Most of rational thinking occurs",
+            options: ["before the margin", "at the margin", "after the margin", "none of these"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "Input costs that do not require an outlay of money are",
+            options: ["explicit costs", "implicit costs", "opportunity costs", "phantom costs"],
+            correctAnswerIndex: 1
+        }
     ],
     week2: [
-        { question: "Hierarchy emerges almost inevitably through a wide variety of evolutionary processes, for the simple reason that hierarchical structures are _____", options: ["perfect", "imperfect", "stable", "unstable"], correctAnswerIndex: 2 },
-        { question: "The mitochondrion is a/an", options: ["sub-cellular organelle", "cell", "tissue", "organ"], correctAnswerIndex: 0 },
-        { question: "The laboratory approach to ecology uses", options: ["equations", "models", "observations", "experiments"], correctAnswerIndex: 3 },
-        { question: "\"The diversity that exists among different geographies\" are", options: ["alpha biodiversity", "beta biodiversity", "gamma biodiversity", "delta biodiversity"], correctAnswerIndex: 2 },
-        { question: "The hierarchical system was given by", options: ["Simon", "Watson", "Hutchinson", "Humboldt"], correctAnswerIndex: 0 },
-        { question: "\"Groups of actually or potentially interbreeding natural populations, which are reproductively isolated from other such species\" is a definition of", options: ["cells", "species", "ecosystems", "biomes"], correctAnswerIndex: 1 },
-        { question: "\"The diversity that exists within an ecosystem\" is", options: ["alpha biodiversity", "beta biodiversity", "gamma biodiversity", "delta biodiversity"], correctAnswerIndex: 0 },
-        { question: "The emergent principle can be stated as", options: ["whole = sum of parts", "whole < sum of parts", "whole > sum of parts", "none of these"], correctAnswerIndex: 2 },
-        { question: "There is more biodiversity in areas with", options: ["less competition, less predation", "less competition, more predation", "more competition, more predation", "more competition, less predation"], correctAnswerIndex: 2 },
-        { question: "For more biodiversity, the level of disturbance should be", options: ["less", "intermediate", "more", "none of these"], correctAnswerIndex: 1 }
+        {
+            question: "Which of these is not a pillar of sustainability?",
+            options: [
+                "environmental sustainability",
+                "economic sustainability",
+                "trans-boundary sustainability",
+                "social sustainability"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "The Trinity explosion of 1945 is taken as the beginning of the",
+            options: ["Holocene", "Cenocene", "Anthropocene", "Eocene"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "According to Malthusian model,",
+            options: [
+                "Population grows in geometric progression, food supply increases in arithmetic progression",
+                "Population grows in geometric progression, food supply increases in geometric progression",
+                "Population grows in arithmetic progression, food supply increases in arithmetic progression",
+                "Population grows in arithmetic progression, food supply increases in geometric progression"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "The demographic transition sees a society move from",
+            options: [
+                "high birth rate, low death rate to low birth rate, high death rate",
+                "low birth rate, high death rate to low birth rate, low death rate",
+                "high birth rate, high death rate to low birth rate, low death rate",
+                "high birth rate, high death rate to low birth rate, high death rate"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "Which of these is a pillar of sustainability",
+            options: [
+                "social sustainability",
+                "industrial sustainability",
+                "agricultural sustainability",
+                "trans-boundary sustainability"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "Which of these is a preventive check according to Malthus?",
+            options: ["foresight", "vice", "misery", "flood"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "The quantum of human impacts can be written as",
+            options: ["I = P + A + T", "I = P X A + T", "I = P X A X T", "I = P + A X T"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "The book \"An Essay on the Principle of Population\" was written by",
+            options: ["Darwin", "Malthus", "Spencer", "Owens"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "The logistic growth equation curve is",
+            options: ["I-shaped", "J-shaped", "S-shaped", "U-shaped"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "Which of these is a positive check according to Malthus?",
+            options: ["late marriage", "war", "celibacy", "moral restraint"],
+            correctAnswerIndex: 1
+        }
     ],
     week3: [
-        { question: "Birds on giraffe are an example of", options: ["colony", "commensalism", "protocooperation", "allelopathy"], correctAnswerIndex: 2 },
-        { question: "Egrets with buffaloes are an example of", options: ["colony", "commensalism", "protocooperation", "allelopathy"], correctAnswerIndex: 1 },
-        { question: "The scientific study of animal behaviour is called", options: ["behaviourism", "ecology", "ethology", "prey-predator dynamics"], correctAnswerIndex: 2 },
-        { question: "The interaction between exotic shrubs and trees through the action of seed predators is an example of", options: ["infraspecific competition", "apparent competition", "disguised competition", "harmonious competition"], correctAnswerIndex: 1 },
-        { question: "Harmonious competition occurs where", options: ["at least one participant is benefited", "at least one participant is unharmed", "both participants are benefited", "both participants are unharmed"], correctAnswerIndex: 3 },
-        { question: "Hamilton's rule can be stated as", options: ["rB < C", "rB > C", "rB = C", "rB + C = 0"], correctAnswerIndex: 1 },
-        { question: "Trampling of grass due to the movement of animals is an example of", options: ["mutualism", "ammensalism", "commensalism", "protocooperation"], correctAnswerIndex: 1 },
-        { question: "I observe a monkey take a tick out of another monkey's head and eat it. In the social context, this behaviour would be called", options: ["tick hunting", "auto grooming", "allo grooming", "foraging"], correctAnswerIndex: 2 },
-        { question: "An inventory of behaviours exhibited by an animal during a behaviour exercise is called", options: ["ecogram", "ethogram", "behaviourogram", "animalogram"], correctAnswerIndex: 1 },
-        { question: "I observe a bird take a tick out of another bird's head and eat it. In the social context, this behaviour would be called", options: ["tick hunting", "auto grooming", "allo grooming", "foraging"], correctAnswerIndex: 2 }
+        {
+            question: "___ is used to identify which potential impacts are relevant to assess.",
+            options: ["screening", "scoping", "reporting", "review"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“the potential or capacity of a material to have adverse effects on living organisms” is",
+            options: ["vulnerability", "susceptibility", "sustainability", "toxicity"],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with soil and species of deciduous forest planted again. This is an example of",
+            options: ["recovery", "restoration", "enhancement", "replacement"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "Hydrocarbons derived from incomplete burning of mineral oils are",
+            options: [
+                "petrogenic hydrocarbons",
+                "pyrogenic hydrocarbons",
+                "biogenic hydrocarbons",
+                "chemoenic hydrocarbons"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with water and a lake was created. It is now visited by several migratory birds. This is an example of",
+            options: ["recovery", "restoration", "enhancement", "replacement"],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "“the relative effect of exposure” is",
+            options: ["vulnerability", "sensitivity", "sustainability", "toxicity"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "___ determines which projects or developments require a full or partial impact assessment study.",
+            options: ["screening", "scoping", "reporting", "review"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“the extent to which a chemical is available for uptake into an organism” is",
+            options: [
+                "bioavailability",
+                "bioaccumulation",
+                "biomagnification",
+                "bioresponse"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "Hydrocarbons derived from biological processes acting on mineral oils are",
+            options: [
+                "petrogenic hydrocarbons",
+                "pyrogenic hydrocarbons",
+                "biogenic hydrocarbons",
+                "chemoenic hydrocarbons"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "“Any changes in natural or human systems that inadvertently increase vulnerability to climatic stimuli; an adaptation that does not succeed in reducing vulnerability but increases it instead” is a definition for",
+            options: ["adaptation", "mitigation", "maladaptation", "malmitigation"],
+            correctAnswerIndex: 2
+        }
     ],
     week4: [
-        { question: "Consider the food chain grass --> grasshopper --> frog --> snake --> hawk. As we move up the food chain,", options: ["available energy decreases", "available energy increases", "available energy remains same", "available energy is zero everywhere"], correctAnswerIndex: 0 },
-        { question: "Consider the food chain grass --> grasshopper --> frog --> snake --> hawk in the food chain", options: [" hawk is producer", "hawk is consumer and carnivore", "hawk is consumer and herbivore", "hawk is decomposer"], correctAnswerIndex: 1 },
-        { question: "Trees --> birds --> parasites --> hyperparasites represent", options: ["upright pyramid of numbers", "inverted pyramid of numbers", "spindle pyramid of numbers", "dumb-bell pyramid of numbers"], correctAnswerIndex: 1 },
-        { question: "Consider the food chain grass --> grasshopper --> frog --> snake --> hawk. In this food chain", options: ["frog is producer", "frog is consumer and carnivore", "frog is consumer and herbivore", "frog is decomposer"], correctAnswerIndex: 1 },
-        { question: "At the compensation point", options: ["photosynthesis = respiration", "photosynthesis < respiration", "photosynthesis > respiration", "photosynthesis = 0"], correctAnswerIndex: 0 },
-        { question: "Tree --> frugivorous birds --> hawk represents", options: ["upright pyramid of numbers", "inverted pyramid of numbers", "spindle pyramid of numbers", "dumb-bell pyramid of numbers"], correctAnswerIndex: 2 },
-        { question: "Glacial lakes are typical examples of", options: ["eutrophic lakes", "hypereutrophic lakes", "oligotrophic lakes", "none of these"], correctAnswerIndex: 2 },
-        { question: "Consider the food chain grass --> grasshopper --> frog --> snake -->hawk in this food chain", options: ["more numbers of hawks than grasshoppers can be supported", "more numbers of grasshoppers than hawks can be supported", "equal numbers of hawks and grasshoppers can be supported", "none of these"], correctAnswerIndex: 1 },
-        { question: "If we all become vegetarians, we'll be able to support our large populations. this can be explained through", options: ["10% rule", "1% rule", "trophic cascades", "biodiversity"], correctAnswerIndex: 0 },
-        { question: "Net primary productivity is given by", options: ["APAR x LUE", "APAR + LUE", "APAR - LUE", "APAR / LUE"], correctAnswerIndex: 0 }
+        {
+            question: "Which of these is a deterministic factor?",
+            options: [
+                "environmental variation",
+                "forest fire",
+                "death rate",
+                "diseases"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "I tried growing vegetables under my teak plantation, but the vegetable plants died out. I should be concerned about",
+            options: ["autophagy", "allelophagy", "autopathy", "allelopathy"],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "The movement of lions across the Gir landscape is an example of",
+            options: ["diffusion", "secular dispersal", "jump dispersal", "drifting"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "The geographical distribution of a species will be controlled by that environmental factor for which the organism has the narrowest range of tolerance. This is the statement for",
+            options: [" Liebig’s law of the minimum", "Liebig’s law of the maximum", "Shelford’s law of tolerance", "Shelford’s law of intolerance"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "The regular, seasonal movement of animals, often along fixed routes is called",
+            options: ["translocation", "migration", "dispersal", "drifting"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "Which of these is a stochastic factor?",
+            options: [
+                "birth rate",
+                "death rate",
+                "population structure",
+                "environmental fluctuation"
+            ],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
+            options: ["translocation", "migration", "dispersal", "drifting"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "Scarcity of food is a",
+            options: ["chemical factor", "demographic factor", "push factor", "pull factor"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "Which of these correctly represents the process of habitat fragmentation and loss?",
+            options: [
+                "Original forest → Dissection → Perforation → Fragmentation → Attrition",
+                "Original forest → Dissection → Attrition → Fragmentation → Perforation",
+                "Original forest → Dissection → Perforation → Attrition → Fragmentation",
+                "Original forest → Dissection → Fragmentation → Perforation → Attrition"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "A root zone treatment plant is an example of",
+            options: [
+                "phytoremediation",
+                "biological control",
+                "biomagnification",
+                "bioaccumulation"
+            ],
+            correctAnswerIndex: 0
+        }
     ],
     week5: [
-        { question: "____ is how close the measured values are to the correct value", options: ["accuracy", "precision", "bias", "variance"], correctAnswerIndex: 0 },
-        { question: "Which of these is not a measure of absolute population density?", options: ["total count", "pelt count", "capture-recapture method", "removal method"], correctAnswerIndex: 1 },
-        { question: "The logistic growth equation, when plotted, appears", options: ["I shaped", "J shaped", "S shaped", "O shaped"], correctAnswerIndex: 2 },
-        { question: "______ employs a simple rule of selecting every kth unit starting with a number chosen at random from 1 to k as the random start", options: ["simple random sampling", "systematic sampling", "stratified sampling", "multistage sampling"], correctAnswerIndex: 1 },
-        { question: "The juvenile mortality rate is the annual number of death of juveniles per", options: ["100 births", "1000 births", "100 live births", "1000 live births"], correctAnswerIndex: 3 },
-        { question: "The minimum replacement level fertility for a population to grow should be greater than", options: ["1", "2", "3", "4"], correctAnswerIndex: 1 },
-        { question: "Pan traps are used for sampling", options: ["bees", "butterflies", "non-pollinator insects", "pollinator insects"], correctAnswerIndex: 3 },
-        { question: "Which of these is true?", options: ["physiological longevity > ecological longevity", "physiological longevity = ecological longevity", "physiological longevity < ecological longevity", "a or b"], correctAnswerIndex: 3 },
-        { question: "A sampling procedure such that each possible combination of sampling units out of the population has the same chance of being selected is referred to as", options: ["simple random sampling", "systematic sampling", "stratified sampling", "multistage sampling"], correctAnswerIndex: 0 },
-        { question: "Cover board surveys are typically used for sampling", options: ["herpetofauna", "fishes", "large mammals", "carnivores"], correctAnswerIndex: 0 }
+        {
+            question: "“a measure of the responsiveness of quantity demanded or quantity supplied to a change in one of its determinants” is",
+            options: ["elasticity", "responsivity", "demand-supply equilibrium", "pricing"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“the ability to produce a good using fewer inputs than another producer” is",
+            options: [
+                "comparative advantage",
+                "absolute advantage",
+                "production advantage",
+                "resource advantage"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "Common resource goods are",
+            options: [
+                "excludable, rival in consumption",
+                "non-excludable, rival in consumption",
+                "excludable, non-rival in consumption",
+                "non-excludable, non-rival in consumption"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“If private parties can bargain without cost over the allocation of resources, they can solve the problem of externalities on their own.” This is a statement for",
+            options: ["Allocation theorem", "Phillips theorem", "Coase theorem", "Nash theorem"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs is known as",
+            options: [
+                "Good development",
+                "Sustainable development",
+                "Futuristic development",
+                "Gandhian development"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "Club goods are",
+            options: [
+                "excludable, rival in consumption",
+                "non-excludable, rival in consumption",
+                "excludable, non-rival in consumption",
+                "non-excludable, non-rival in consumption"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "Which of these is not a method of internalisation of externalities?",
+            options: [
+                "tradable pollution permits",
+                "charities to social causes",
+                "command-and-control policies",
+                "free market"
+            ],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "Private goods are",
+            options: [
+                "excludable, rival in consumption",
+                "non-excludable, rival in consumption",
+                "excludable, non-rival in consumption",
+                "non-excludable, non-rival in consumption"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“a simplified description, especially a mathematical one, of a system or process, to assist calculations and predictions” is the definition of a / an",
+            options: ["equation", "model", "philosophy", "process dynamics"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“the impact of one person’s actions on the well-being of a bystander” is",
+            options: ["actor-observer effect", "externality", "internality", "benefits principle"],
+            correctAnswerIndex: 1
+        }
     ],
-    
     week6: [
-        { question: "A climax caused by wildfires is an example of", options: ["climatic climax", "edaphic climax", "disclimax", "catastrophic climax"], correctAnswerIndex: 3 },
-        { question: "When compared to generalist species, specialist species have", options: ["narrower niches", "broader niches", "same-size niches", "none of these"], correctAnswerIndex: 0 },
-        { question: "Which of these depicts correctly the lithosere primary succession?", options: ["rock --> crustose lichen --> foliose lichen --> moss --> herbaceous stage --> shrub --> woodland --> climax", "rock --> foliose lichen --> crustose lichen --> moss --> herbaceous stage --> shrub --> woodland --> climax", "moss --> crustose lichen --> foliose lichen --> rock --> herbaceous stage --> shrub --> woodland --> climax", "rock --> crustose lichen --> foliose lichen --> shrub --> herbaceous stage --> moss --> woodland --> climax"], correctAnswerIndex: 0 },
-        { question: "Importance value can be written as", options: ["relative density + relative frequency X relative dominance", "relative density X relative frequency + relative dominance", "relative density + relative frequency + relative dominance", "relative density X relative frequency X relative dominance"], correctAnswerIndex: 2 },
-        { question: "Lithosere is an example of", options: ["hydrosere", "xerosere", "psammosere", "halosere"], correctAnswerIndex: 1 },
-        { question: "Importance value varies from", options: ["0 to 10", "0 to 50", "0 to 100", "0 to 300"], correctAnswerIndex: 3 },
-        { question: "A species found most frequently in a particular community, but also present occasionally in others is called", options: ["accidental species", "indifferent species", "selective species", "exclusive species"], correctAnswerIndex: 2 },
-        { question: "The climax near Tindi village is being controlled by disturbance by cattle. This is an example of", options: ["climatic climax", "edaphic climax", "disclimax", "catastrophic climax"], correctAnswerIndex: 2 },
-        { question: "Which of these is correct?", options: ["fundamental niche > realised niche", "fundamental niche = realised niche", "fundamental niche < realised niche", "a or b"], correctAnswerIndex: 3 },
-        { question: "Which of these is not a characteristic of pioneer species?", options: ["ability to grow on bare rocks", "ability to tolerate extreme temperatures", "large size", "short life span"], correctAnswerIndex: 2 }
+        {
+            question: "“the claim that, other things being equal, the quantity demanded of a good falls when the price of the good rises” is a statement of",
+            options: [
+                "law of demand",
+                "law of supply",
+                "law of quantity demanded",
+                "law of quantity supplied"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“a legal maximum on the price at which a good can be sold” is",
+            options: ["price ceiling", "price floor", "selling ceiling", "selling floor"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“a good for which, other things being equal, an increase in income leads to a decrease in demand” is",
+            options: ["normal good", "inferior good", "Giffen good", "common good"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“a table that shows the relationship between the price of a good and the quantity supplied” is",
+            options: [
+                "demand table",
+                "demand schedule",
+                "supply table",
+                "supply schedule"
+            ],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "“a graph of the relationship between the price of a good and the quantity demanded” is",
+            options: ["demand curve", "supply curve", "Laffer's curve", "Phillips curve"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“a table that shows the relationship between the price of a good and the quantity demanded” is",
+            options: [
+                "demand table",
+                "demand schedule",
+                "supply table",
+                "supply schedule"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“a measure of how much the quantity demanded of one good responds to a change in the price of another good, computed as the percentage change in quantity demanded of the first good divided by the percentage change in price of the second good” is",
+            options: [
+                "price elasticity of demand",
+                "income elasticity of demand",
+                "cross-price elasticity of demand",
+                "price elasticity of supply"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "Rice and wheat are",
+            options: ["substitutes", "complements", "club goods", "public goods"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“a good for which, other things being equal, an increase in income leads to an increase in demand” is",
+            options: ["normal good", "inferior good", "Giffen good", "common good"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“a measure of how much the quantity demanded of a good responds to a change in the price of that good, computed as the percentage change in quantity demanded divided by the percentage change in price” is",
+            options: [
+                "price elasticity of demand",
+                "income elasticity of demand",
+                "cross-price elasticity of demand",
+                "price elasticity of supply"
+            ],
+            correctAnswerIndex: 0
+        }
     ],
-    
     week7: [
-        { question: "I tried growing vegetables under my teak plantation, but the vegetable plants died out. I should be concerned about", options: ["autophagy", "allelophagy", "autopathy", "allelopathy"], correctAnswerIndex: 3 },
-        { question: "Which of these is a physical factor of habitat?", options: ["soil", "moisture", "predators", "temperatures"], correctAnswerIndex: 2 },
-        { question: "\"The rate of biological process is limited by that factor in least amount relative to requirement, so there is a single limiting factor\" this is the statement for", options: ["Liebig's law of minimum", "Liebig's law of maximum", "Shelford's law of tolerance", "Shelford's law of intolerance"], correctAnswerIndex: 0 },
-        { question: "Transplantation experiments are used to find", options: ["potential range", "effective range", "actual range", "economic range"], correctAnswerIndex: 0 },
-        { question: "\"Quick movement over large distances, often across unsuitable terrain\" is a definition of", options: ["diffusion", "secular dispersal", "jump dispersal", "drifting"], correctAnswerIndex: 2 },
-        { question: "The movement of lions across the Gir landscape is an example of", options: ["diffusion", "secular dispersal", "jump dispersal", "drifting"], correctAnswerIndex: 0 },
-        { question: "Good climate is a", options: ["chemical factor", "demographic factor", "push factor", "pull factor"], correctAnswerIndex: 3 },
-        { question: "Scarcity of food is a", options: ["chemical factor", "demographic factor", "push factor", "pull factor"], correctAnswerIndex: 2 },
-        { question: "\"The geographical distribution of a species will be controlled by that environment factor for which the organism has the narrowest range of tolerance\" this is the statement for", options: ["Liebig's law of minimum", "Liebig's law of maximum", "Shelford's law of tolerance", "Shelford's law of intolerance"], correctAnswerIndex: 2 },
-        { question: "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called", options: ["translocation", "migration", "dispersal", "drifting"], correctAnswerIndex: 2 }
+        {
+            question: "“the price of a good that prevails in the world market for that good” is the definition of",
+            options: ["export price", "import price", "world price", "domestic price"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "The area between the demand curve and the price is an indicator of",
+            options: [
+                "consumer surplus",
+                "producer surplus",
+                "total surplus",
+                "deadweight loss"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“the amount a buyer is willing to pay for a good minus the amount the buyer actually pays for it” is",
+            options: [
+                "consumer surplus",
+                "producer surplus",
+                "total surplus",
+                "deadweight loss"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“the amount a seller is paid for a good minus the seller’s cost of providing it” is",
+            options: [
+                "consumer surplus",
+                "producer surplus",
+                "total surplus",
+                "deadweight loss"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "Value to buyers - Cost to sellers is",
+            options: [
+                "consumer surplus",
+                "producer surplus",
+                "total surplus",
+                "deadweight loss"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "“the fall in total surplus that results from a market distortion, such as a tax” is",
+            options: [
+                "consumer surplus",
+                "producer surplus",
+                "total surplus",
+                "deadweight loss"
+            ],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "Laffer's curve is the relationship between",
+            options: [
+                "inflation and unemployment",
+                "tax size and tax revenue",
+                "producer surplus and consumer surplus",
+                "tax size and deadweight loss"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "Imposition of tariff",
+            options: [
+                "increases producer surplus and government revenue",
+                "increases consumer surplus and government revenue",
+                "increases producer surplus, consumer surplus and government revenue",
+                "increases total surplus"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“the maximum amount that a buyer will pay for a good” is",
+            options: [
+                "willingness to pay",
+                "market demand",
+                "demand curve",
+                "buyer’s surplus"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "The area between the supply curve and the price is an indicator of",
+            options: [
+                "consumer surplus",
+                "producer surplus",
+                "total surplus",
+                "deadweight loss"
+            ],
+            correctAnswerIndex: 1
+        }
     ],
-    
     week8: [
-        { question: "According to Leopold, which of these is not a tool of habitat management", options: ["fire", "gun", "cattle", "sickle"], correctAnswerIndex: 3 },
-        { question: "Which of these correctly represents the process of habitat fragmentation and loss", options: ["original forest --> dissection --> perforation --> fragmentation --> attrition", "original forest --> dissection --> attrition --> fragmentation --> perforation", "original forest --> dissection --> perforation --> attrition --> fragmentation", "original forest --> dissection --> fragmentation --> perforation --> attrition"], correctAnswerIndex: 0 },
-        { question: "We prefer those areas for the creation of conservation reserve where the level of threat is", options: ["very high", "medium", "very low", "non-existent"], correctAnswerIndex: 1 },
-        { question: "\"The subset of physical and biotic environmental factors that permit an animal (or plant) to survive and reproduce\" is the definition of", options: ["habitat", "ecosystem", "biome", "biosphere"], correctAnswerIndex: 0 },
-        { question: "Captive breeding is an example of", options: ["in-situ conservation", "ex-situ conservation", "in-situ preservation", "ex-situ preservation"], correctAnswerIndex: 1 },
-        { question: "Which of these is a deterministic factor?", options: ["environmental variation", "forest fire", "death rate", "diseases"], correctAnswerIndex: 2 },
-        { question: "Which of these is a stochastic factor?", options: ["birth rate", "death rate", "population structure", "environmental fluctuation"], correctAnswerIndex: 3 },
-        { question: "Zoo is an example of", options: ["in-situ conservation", "ex-situ conservation", "in-situ preservation", "ex-situ preservation"], correctAnswerIndex: 1 },
-        { question: "The acronym HIPPO does not include", options: ["habitat loss", "habitat enhancement", "invasive species", "human over-population"], correctAnswerIndex: 1 },
-        { question: "The acronym HIPPO does not include", options: ["habitat loss", "invasive species", "pollination", "pollution"], correctAnswerIndex: 2 }
+        {
+            question: "For a positive consumption externality,",
+            options: [
+                "SMB = PMB",
+                "SMB = PMB − MD",
+                "SMB = PMB + MB",
+                "SMC = PMC / MD"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "For a positive production externality,",
+            options: [
+                "SMB = PMB",
+                "SMB = PMB − MD",
+                "SMB = PMB + MB",
+                "SMC = PMC / MD"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“The direct cost to producers of producing an additional unit of a good” is",
+            options: [
+                "private marginal cost (PMC)",
+                "social marginal cost (SMC)",
+                "private marginal benefit (PMB)",
+                "social marginal benefit (SMB)"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "For a negative production externality,",
+            options: [
+                "SMC = PMC + MD",
+                "SMC = PMC - MD",
+                "SMC = PMC",
+                "SMC = PMC - MB"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "The private marginal cost to producers plus any costs associated with the production of the good that are imposed on others is",
+            options: [
+                "private marginal cost (PMC)
+                "social marginal cost (SMC)",
+                "private marginal benefit (PMB)",
+                "social marginal benefit (SMB)"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "Partying with loud noise is an example of",
+            options: [
+                "negative production externality",
+                "positive production externality",
+                "negative consumption externality",
+                "positive consumption externality"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "“When an individual’s consumption increases the well-being of others who are not compensated by the individual,” we have",
+            options: [
+                "negative production externality",
+                "positive production externality",
+                "negative consumption externality",
+                "positive consumption externality"
+            ],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "“When a firm’s production increases the well-being of others but the firm is not compensated by those others,” we have",
+            options: [
+                "negative production externality",
+                "positive production externality",
+                "negative consumption externality",
+                "positive consumption externality"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“When an individual’s consumption reduces the well-being of others who are not compensated by the individual,” we have",
+            options: [
+                "negative production externality",
+                "positive production externality",
+                "negative consumption externality",
+                "positive consumption externality"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "For a negative consumption externality,",
+            options: [
+                "SMB = PMB",
+                "SMB = PMB − MD",
+                "SMB = PMB + MB",
+                "SMC = PMC / MD"
+            ],
+            correctAnswerIndex: 1
+        }
     ],
-    
     week9: [
-        { question: "Which of these is a positive check according to Malthus?", options: ["late marriage", "war", "celibacy", "moral restraint"], correctAnswerIndex: 1 },
-        { question: "The demographic transition sees a society move from", options: ["high birth rate, low death rate to low birth rate, low death rate", "low birth rate, high death rate to low birth rate, low death rate", "high birth rate, high death rate to low birth rate, low death rate", "high birth rate, high death rate to low birth rate, high death rate"], correctAnswerIndex: 2 },
-        { question: "According to Malthusian model", options: ["population grows in geometric progression, food supply increases in arithmetic progression", "population grows in geometric progression, food supply increases in geometric progression", "population grows in arithmetic progression, food supply increases in arithmetic progression", "population grows in arithmetic progression, food supply increases in geometric progression"], correctAnswerIndex: 0 },
-        { question: "The book \"An essay on the principle of population\" was written by", options: ["Darwin", "Malthus", "Spencer", "Owens"], correctAnswerIndex: 1 },
-        { question: "_______ is used to identify which potential impacts are relevant to assess.", options: ["screening", "scoping", "reporting", "review"], correctAnswerIndex: 1 },
-        { question: "Which of these is preventive check according to Malthus?", options: ["foresight", "vice", "misery", "flood"], correctAnswerIndex: 0 },
-        { question: "______ determines which projects or developments require a full or partial impact assessment study.", options: ["screening", "scoping", "reporting", "review"], correctAnswerIndex: 0 },
-        { question: "Which of these is a pillar of sustainability?", options: ["social sustainability", "industrial sustainability", "agricultural sustainability", "trans-boundary sustainability"], correctAnswerIndex: 0 },
-        { question: "Which of these is not a pillar of sustainability?", options: ["environmental sustainability", "economic sustainability", "trans-boundary sustainability", "agricultural sustainability"], correctAnswerIndex: 2 },
-        { question: "The quantum of human impacts is given by", options: ["I = P X A X T", "I = P + A + T", "I = P + A - T", "I = P - (A+T)"], correctAnswerIndex: 0 }
+        {
+            question: "“costs that have already been committed and cannot be recovered” are",
+            options: ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "“total revenue minus total cost, including both explicit and implicit costs” is a definition of",
+            options: ["economic profit", "accounting profit", "profit", "loss"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“the increase in total cost that arises from an extra unit of production” are",
+            options: ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "A monopolist firm’s profit is given by",
+            options: [
+                "(Price - ATC) × Q",
+                "(Price - Q) × ATC",
+                "(ATC - Q) × Price",
+                "Price × Q - ATC"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "Which of the following is true for a competitive firm?",
+            options: ["P > MR", "P > MC", "MR > MC", "MR = MC"],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "“the amount a firm receives for the sale of its output” is a definition of",
+            options: ["total revenue", "total cost", "profit", "loss"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "When the cost of production for a single firm is much lesser than the cost of production for competitive firms, we have a / an",
+            options: ["natural monopoly", "artificial monopoly", "oligopoly", "duopoly"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“costs that do not vary with the quantity of output produced” are",
+            options: ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“costs that vary with the quantity of output produced” are",
+            options: ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“the increase in output that arises from an additional unit of input” is",
+            options: [
+                "marginal product",
+                "marginal profit",
+                "marginal loss",
+                "marginal cost"
+            ],
+            correctAnswerIndex: 0
+        }
     ],
-    
     week10: [
-        { question: "Which of these is not a climatic forcing for Earth?", options: ["changes in plates tectonics", "changes in Earth's orbit", "changes in Sun's orbit", "changes in Sun's strength"], correctAnswerIndex: 2 },
-        { question: "Mesodebris in the context of plastic debris has a fragment size of", options: [">20mm", "5-20 mm", "<5mm", "<1mm"], correctAnswerIndex: 1 },
-        { question: "Macrodebris in the context of plastic debris had a fragment size of", options: [">20mm", "5-20mm", "<5mm", "<1mm"], correctAnswerIndex: 0 },
-        { question: "\"Any changes in natural or human systems that inadvertently increase vulnerability to climatic stimuli; an adaptation that does not succeed in reducing vulnerability but increases it instead\" is a definition of", options: ["adaptation", "mitigation", "maladaptation", "malmitigation"], correctAnswerIndex: 2 },
-        { question: "Which of these is not a principle of ecological restoration?", options: ["ecological integrity", "long term sustainability", "benefits and engages scientists", "informed by past and future"], correctAnswerIndex: 2 },
-        { question: "The government came up with a regulation that incandescent bulbs be replaced by LED bulbs to reduce electricity consumption and carbon dioxide release from power plants. In the context of climate change, such an action would be called", options: ["adaptation", "mitigation", "deceleration", "maladaptation"], correctAnswerIndex: 1 },
-        { question: "Which of these is not a principle of ecological restoration?", options: ["ecological integrity", "short term sustainability", "benefits and engages society", "informed by past and future"], correctAnswerIndex: 1 },
-        { question: "\"The ability of a system to adjust to climate change (including climate variability and extremes) to moderate potential damages, to take advantage of opportunities, or to cope with the consequences\" is a definition of", options: ["adaptive response", "adaptive capacity", "mitigative response", "mitigative capacity"], correctAnswerIndex: 1 },
-        { question: "Which of these is not a climatic forcing for Earth?", options: ["changes in plate tectonics", "changes in Earth's orbit", "changes in Moon's orbit", "changes in Sun's strength"], correctAnswerIndex: 2 },
-        { question: "Because of climate change, Mudumalai tiger reserve is suffering from frequent droughts. The management has built several artificial water holes for animals and fills them regularly with tankers. In the context of climate change, such an action would be called", options: ["adaptation", "mitigation", "deceleration", "maladaptation"], correctAnswerIndex: 0 }
+        {
+            question: "“an absolute level of income set by the government for each family size below which a family is deemed to be in poverty” is known as",
+            options: [
+                "deprivation line",
+                "poverty line",
+                "deprivation index",
+                "poverty index"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "Absolute poverty depends",
+            options: [
+                "on income but not on access to social services",
+                "not on income but on access to social services",
+                "on income and on access to social services",
+                "neither on income nor on access to social services"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "“the equipment and structures used to produce goods and services” is the definition of",
+            options: ["tools", "machinery", "capital", "factors of production"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "“above-equilibrium wages paid by firms to increase worker productivity” are known as",
+            options: [
+                "compensating wage",
+                "efficiency wage",
+                "productivity wage",
+                "retention wage"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“government policy aimed at protecting people against the risk of adverse events” is",
+            options: [
+                "Social protection",
+                "Social insurance",
+                "Social security",
+                "Socialism"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“a difference in wages that arises to offset the non-monetary characteristics of different jobs” is known as",
+            options: [
+                "differentiating differential",
+                "compensating differential",
+                "differentiating integral",
+                "compensating integral"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "For a competitive and profit-maximising firm,",
+            options: [
+                "each factor’s rental price < the value of the marginal product for that factor",
+                "each factor’s rental price = the value of the marginal product for that factor",
+                "each factor’s rental price > the value of the marginal product for that factor",
+                "each factor’s rental price = the value of the average product for that factor"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“a condition characterised by severe deprivation of basic human needs, including food, safe drinking water, sanitation facilities, health, shelter, education and information” is known as",
+            options: ["absolute poverty", "relative poverty", "median poverty", "poverty line"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“a condition where a household’s income is lower than the median income in the particular country” is known as",
+            options: ["absolute poverty", "relative poverty", "median poverty", "poverty line"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“the increase in the amount of output from an additional unit of labor” is",
+            options: [
+                "marginal product of labour",
+                "marginal product of input",
+                "average product of labour",
+                "average product of input"
+            ],
+            correctAnswerIndex: 0
+        }
     ],
-    
     week11: [
-        { question: "Which of these is correct?", options: ["R + G = M + F", "R + M = G + F", "R + F = M + G", "R + G + M + F = 0"], correctAnswerIndex: 0 },
-        { question: "Which of these is not an impact of toxic chemicals?", options: ["lethal effects", "sub-lethal effects", "reduction of existing stressors", "reduced fecundity"], correctAnswerIndex: 2 },
-        { question: "A pest population is called controlled when", options: ["it is not increasing", "it is decreasing", "it is not causing any economic damage", "it is not causing excessive economic damage"], correctAnswerIndex: 3 },
-        { question: "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with soil and species of deciduous forest planted again. This is an example of", options: ["recovery", "restoration", "enhancement", "replacement"], correctAnswerIndex: 1 },
-        { question: "The root zone treatment plant is an example of", options: ["phytoremediation", "biological control", "biomagnification", "bioaccumulation"], correctAnswerIndex: 0 },
-        { question: "A pest population is called uncontrolled when", options: ["it is increasing", "it is not decreasing", "it is causing some economic damage", "it is causing excessive economic damage"], correctAnswerIndex: 3 },
-        { question: "The impact of El Nino on fishery in Peru is explained by", options: ["match hypothesis", "mismatch hypothesis", "match-mismatch hypothesis", "none of these"], correctAnswerIndex: 2 },
-        { question: "Which of these is correct?", options: ["the maximum sustainable yield is near the beginning of the sigmoidal curve", "the maximum sustainable yield is near the mid-point of the sigmoidal curve", "the maximum sustainable yield is near the end of the sigmoidal curve", "none of these"], correctAnswerIndex: 1 },
-        { question: "Ludwig's ratchet predicts", options: ["decreasing harvesting rate", "constant harvesting rate", "increasing harvesting rate", "fluctuating harvesting rate"], correctAnswerIndex: 2 },
-        { question: "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with water and a lake was created. It is now visited by several migratory birds. This is an example of", options: ["recovery", "restoration", "enhancement", "replacement"], correctAnswerIndex: 3 }
+        {
+            question: "“an action taken by an uninformed party to induce an informed party to reveal information” is known as",
+            options: ["signalling", "screening", "informing", "heuristics"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“the part of actual resources that can be developed profitably in the future” are",
+            options: [
+                "potential resources",
+                "actual resources",
+                "reserve resources",
+                "stock resources"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "“the limit on the consumption bundles that a consumer can afford” is known as",
+            options: [
+                "consumption constraint",
+                "budget constraint",
+                "bundle constraint",
+                "affordability constraint"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“mental short cut using emotion (gut feeling) to influences the decision” is",
+            options: [
+                "affect heuristic",
+                "availability heuristic",
+                "effort heuristic",
+                "familiarity heuristic"
+            ],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“those resources that are currently being used after surveying, quantification and qualification” are",
+            options: [
+                "potential resources",
+                "actual resources",
+                "reserve resources",
+                "stock resources"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "“the change in consumption that results when a price change moves the consumer along a given indifference curve to a point with a new marginal rate of substitution” is known as",
+            options: [
+                "income effect",
+                "substitution effect",
+                "indifference effect",
+                "budget effect"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "An inferior good whose demand increases with price is called as",
+            options: ["Normal good", "Veblen good", "Giffen good", "Demand good"],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "Which of these is not a property of indifference curves?",
+            options: [
+                "Higher indifference curves are preferred to lower ones",
+                "Indifference curves are downward-sloping",
+                "Indifference curves cross at right angles",
+                "Indifference curves are bowed inwards"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "“an action taken by an informed party to reveal private information to an uninformed party” is known as",
+            options: ["signalling", "screening", "informing", "heuristics"],
+            correctAnswerIndex: 0
+        },
+        {
+            question: "“simple strategies or mental processes used to quickly form judgments, make decisions, and find solutions to complex problems” is known as",
+            options: ["signalling", "screening", "informing", "heuristics"],
+            correctAnswerIndex: 3
+        }
     ],
-    
     week12: [
-        { question: "\"Enquiry into plants\" is a book written by", options: ["Theophrastus", "Linnaeus", "Malthus", "Humboldt"], correctAnswerIndex: 0 },
-        { question: "The mitochondrion is a/an", options: ["sub-cellular organelle", "cell", "tissue", "organ"], correctAnswerIndex: 0 },
-        { question: "Which of these is not a pillar of sustainability?", options: ["environmental sustainability", "economic sustainability", "trans-boundary sustainability", "social sustainability"], correctAnswerIndex: 2 },
-        { question: "Good climate is a", options: ["chemical factor", "demographic factor", "push factor", "pull factor"], correctAnswerIndex: 3 },
-        { question: "Importance value varies from", options: ["0 to 10", "0 to 50", "0 to 100", "0 to 300"], correctAnswerIndex: 3 },
-        { question: "Consider the food chain: grass --> grasshopper --> frog --> snake --> hawk. In this food chain", options: ["frog is producer", "frog is consumer and carnivore", "frog is consumer and herbivore", "frog is decomposer"], correctAnswerIndex: 1 },
-        { question: "The juvenile mortality rate is the annual number of deaths of juvenile per", options: ["100 births", "1000 births", "100 live births", "1000 live births"], correctAnswerIndex: 3 },
-        { question: "Because of climate change, Mudumalai Tiger Reserve is suffering from frequent droughts. The management has built several artificial water holes for animals, and fills them up regularly with tankers. In the context of climate change, such an action would be called", options: ["adaptation", "mitigation", "deceleration", "maladaptation"], correctAnswerIndex: 0 },
-        { question: "The scientific study of animal behaviour is called", options: ["behaviourism", "ecology", "ethology", "prey-predator dynamics"], correctAnswerIndex: 2 },
-        { question: "Zoo is an example of", options: ["in-situ conservation", "ex-situ conservation", "in-situ preservation", "ex-situ preservation"], correctAnswerIndex: 1 }
-    ],
-    
+        {
+            question: "As per Wildlife Protection Act 1972 (WPA 1972), wild life includes any animal, aquatic or land vegetation which forms part of any _____.",
+            options: ["ecosystem", "state", "country", "habitat"],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "The tiger has a home range of several square kilometres, regulates the ecosystem through controlling herbivore populations and trophic cascades, and people come to tiger reserves to watch tigers. Thus, the tiger can be called as",
+            options: [
+                "umbrella species",
+                "keystone species",
+                "flagship species",
+                "all of the above"
+            ],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "Soil formation is an example of",
+            options: [
+                "provisioning service",
+                "regulating service",
+                "supporting service",
+                "cultural service"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "Zoo is an example of",
+            options: [
+                "in-situ conservation",
+                "ex-situ conservation",
+                "in-situ preservation",
+                "ex-situ preservation"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "The fig tree bears fruits in times when animals do not have much access to food. In this context, it would be a good example of",
+            options: [
+                "least concern species",
+                "keystone species",
+                "flagship species",
+                "extinct species"
+            ],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "Nutrient cycling is an example of",
+            options: [
+                "provisioning service",
+                "regulating service",
+                "supporting service",
+                "cultural service"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "People come to Sessa orchid sanctuary in Arunachal Pradesh to witness orchids, which in this context would be classified as",
+            options: [
+                "umbrella species",
+                "keystone species",
+                "flagship species",
+                "extinct species"
+            ],
+            correctAnswerIndex: 2
+        },
+        {
+            question: "We prefer those areas for the creation of a conservation reserve where the level of threat is",
+            options: ["very high", "medium", "very low", "non-existent"],
+            correctAnswerIndex: 1
+        },
+        {
+            question: "The elephant has a home range of several square kilometres, regulates the ecosystem by its habit of destructive feeding, and people can relate to this animal which is important for conservation. Given this background, the elephant can be called as",
+            options: [
+                "umbrella species",
+                "keystone species",
+                "flagship species",
+                "all of the above"
+            ],
+            correctAnswerIndex: 3
+        },
+        {
+            question: "Biological control of pest populations is an example of",
+            options: [
+                "provisioning service",
+                "regulating service",
+                "supporting service",
+                "cultural service"
+            ],
+            correctAnswerIndex: 1
+        }
+    ]
 };
 
 export default quizData;
